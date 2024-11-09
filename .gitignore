@@ -1,0 +1,8 @@
+# Ignore README.md
+README.md
+
+# Ignore .github/ISSUE_TEMPLATE folder
+.github/ISSUE_TEMPLATE/
+
+# Ignore docs folder
+docs/
