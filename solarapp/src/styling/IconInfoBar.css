@@ -1,0 +1,18 @@
+#icon-info-bar{
+    background-color: beige;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.icon-info-card{
+    max-width: 200px;
+}
+.icon-card-image{
+    width: 90%;
+}
+
+.icon-card-image img{
+    width: 95%;
+}
+
