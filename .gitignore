@@ -2,6 +2,7 @@
 README.md
 
 # Ignore .github/ISSUE_TEMPLATE folder
+.github/
 .github/ISSUE_TEMPLATE/
 
 # Ignore docs folder
