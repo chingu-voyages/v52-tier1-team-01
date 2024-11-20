@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <div className="header-action-buttons">
         <button type="button" className="schedule-now">schedule now</button>
-        <button type="button" className="check schedule">check schedule</button>
+        <button type="button" className="check-schedule">check schedule</button>
       </div>
       {/* <a href="/admin">Admin Page</a> */}
     </section>

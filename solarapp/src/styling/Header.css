@@ -1,16 +1,26 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 section.header {
   background-color: #edebeb;
   /* background: url(/asset/main_bg.png)no-repeat; */
   width: 100%;
-  height: 100vh;
 }
 
 header.header-bar {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-nav ul{
@@ -30,6 +40,9 @@ header.header-bar {
 
 .header-info {
   width: 500px;
-  padding: 46px 40px;
+  padding: 10px;
   background-color: #ffffff80;
+}
+.check-schedule{
+  display: none;
 }

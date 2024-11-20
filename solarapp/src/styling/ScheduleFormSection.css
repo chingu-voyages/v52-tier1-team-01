@@ -1,0 +1,12 @@
+.schedule-form-section {
+  width: 100%;
+  background-color: #fafafa;
+}
+.schedule-form-section .form-wrapper fieldset{
+  border: none;
+}
+.schedule-form-section .form-question label{
+  display: inline-block;
+  min-width: 120px;
+  margin-bottom: 10px;
+}
