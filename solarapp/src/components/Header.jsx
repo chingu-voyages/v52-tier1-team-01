@@ -14,7 +14,9 @@ const Header = () => {
           <ul>
             <li>Schedule</li>
             <li>About Us</li>
-            <li className="admin">Admin Login</li>
+            <li className="admin">
+              <a href="/admin">Admin Login</a>
+            </li>
           </ul>
         </nav>
       </header>
