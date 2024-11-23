@@ -1,0 +1,48 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section.header {
+  background-color: #edebeb;
+  /* background: url(/asset/main_bg.png)no-repeat; */
+  width: 100%;
+}
+
+header.header-bar {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.header-nav ul li{
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.header-nav ul li.admin{
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.header-info {
+  width: 500px;
+  padding: 10px;
+  background-color: #ffffff80;
+}
+.check-schedule{
+  display: none;
+}
