@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import '../styling/ScheduleFormSection.css';
 
+import { backToHomePage } from "../utils/basics/backToHomePage";
+
 const ScheduleFormSection = () => {
+  useEffect(() => {
+    // Initialize the back to homepage functionality
+    backToHomePage();
+  }, []);
+
   return (
     <section className="schedule-form-section">
-      <form method="" className="form-wrapper">
+      <form method="post" className="form-wrapper" action="#">
         <h3 className="form-head">Solar Panel Application</h3>
         <fieldset>
           <legend>Personal Details</legend>
