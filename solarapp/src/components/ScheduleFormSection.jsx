@@ -46,10 +46,14 @@ const ScheduleFormSection = () => {
             <button type="button" className="button-reset">Reset</button>
           </div>
         </fieldset>
-
       </form>
-      <div className="form-sucess-info">
-        <p></p>
+      <div className="form-success-info">
+        <strong>Preferred timeslot is submitted</strong>
+        <p>Your appointment is scheduled but not confirmed.</p>
+        <p>
+          Please note that preferred time slot is not guaranteed. You will receive a confirmation email a few hours before the scheduled visit.<br /><br />
+          Change of plans? Please call the provided phone number if you need to cancel your appointment: <span className="phone-num">+1-800-174-8345</span>
+        </p>
       </div>
       <div className="controller-linker">
         <p>
