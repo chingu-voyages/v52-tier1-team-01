@@ -1,4 +1,4 @@
-/* Reset css */
+/* =================== RESET STYLE START =================== */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -33,8 +33,9 @@ p {
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
+/* =================== RESET STYLE END =================== */
 
-
+/* =================== MAIN =================== */
 :root {
   --primary : #454657;
   --border: #D8D8D9;
@@ -46,3 +47,22 @@ body{
   color: var(--primary);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
