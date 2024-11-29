@@ -5,9 +5,11 @@
     padding-inline: 30px;
     padding-block: 140px;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .icon-info-card{
@@ -35,4 +37,11 @@
 }
 .icon-card-text span {
     font-weight: bold;
+}
+
+@media  screen and (max-width:768px) {
+    #icon-info-bar{
+        justify-content: center;
+        gap: 40px;
+    }
 }

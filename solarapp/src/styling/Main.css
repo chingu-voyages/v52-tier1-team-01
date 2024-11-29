@@ -47,13 +47,6 @@ body{
   color: var(--primary);
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1140px;
-  padding: 0 30px;
-  width: 100%;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -65,4 +58,22 @@ body{
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+  .container {
+    max-width: 1020px;
+  }
+}
+@media screen and (max-width:768px) {
+  .container {
+    max-width: 100%;
+  }
 }
