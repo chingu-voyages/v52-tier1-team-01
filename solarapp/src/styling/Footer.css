@@ -1,4 +1,21 @@
 #footer{
-    color: #fff;
-    background-color: rgb(0,0,0, 0.8);
+    padding: 60px 0 ;
+    color: var(--white);
+    background-color: #0D110C;
+    text-align: center;
+}
+.footer-links{
+    color: var(--white);
+    background-color: #0D110C;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer-links ul{
+    list-style-type: none ;
+}
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+.footer-links ul li:first-child a{
+    color: var(--white);
 }

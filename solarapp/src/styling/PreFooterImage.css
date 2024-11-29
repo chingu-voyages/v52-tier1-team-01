@@ -1,6 +1,6 @@
 .pre-footer-image {
   width: 100%;
   background-color: aliceblue;
-  height: 200px;
-   /* background: url('/solarapp/public/assets/footer-background.png'); */
+  height: 550px;
+  background: url('../../public/assets/prefooter-bg.png')no-repeat center /cover;
 }
