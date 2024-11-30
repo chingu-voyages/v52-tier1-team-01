@@ -8,7 +8,7 @@ const Footer = () => {
       <div class="footer-links">
         <ul>
           <li>
-            <a href="https://github.com/chingu-voyages/v52-tier1-team-01" target="_blank">V52 Tier1 Team01 <br /> Github Repository
+            <a href="https://github.com/chingu-voyages/v52-tier1-team-01" target="_blank" rel="noopener noreferrer">V52 Tier1 Team01 <br /> Github Repository
             </a>
           </li>
           <li>About Us</li>
