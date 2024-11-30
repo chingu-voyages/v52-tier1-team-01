@@ -13,16 +13,14 @@ import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <>
-      <h1>Home PAGE - <br />To be editted</h1>
+      <Header />
+      <IconInfoBar />
+      <ScheduleFormSection />
+      <SearchAppointmentSection />
+      <PreFooterImage />
+      <Footer />
+    </>
+  );
+};
 
-        <Header />
-        <IconInfoBar />
-        <ScheduleFormSection />
-        <SearchAppointmentSection />
-        <PreFooterImage />
-        <Footer />
-      </>
-    );
-  };
-  
-  export default HomePage;
+export default HomePage;
