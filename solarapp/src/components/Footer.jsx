@@ -7,13 +7,15 @@ const Footer = () => {
     <div id="footer">
       <div class="footer-links">
         <ul>
-          <li>V52 Tier1 Team01</li>
-          <li>Github Repository</li>
+          <li>
+            <a href="https://github.com/chingu-voyages/v52-tier1-team-01" target="_blank">V52 Tier1 Team01 <br /> Github Repository
+            </a>
+          </li>
           <li>About Us</li>
         </ul>
       </div>
       <div class="footer-note">
-        <p>&#169; Soumyajit Yujeong Amanda</p>
+        <p>&#169; Copyright 2024 Soumyajit Yujeong Amanda</p>
       </div>
     </div>
   );

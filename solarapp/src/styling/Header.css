@@ -1,26 +1,24 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+section.header {
+  width: 100%;
+  height: 100vh;
+  background: url('../../public/assets/main-bg.png')no-repeat center /cover;
 }
 
-section.header {
-  background-color: #edebeb;
-  /* background: url(/asset/main_bg.png)no-repeat; */
-  width: 100%;
+section.header a{
+  text-decoration: none;
+  color: #222;
 }
+
+
 
 header.header-bar {
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 90px;
+  font-size: 25px;
+  color: #fff;
 }
 
 .header-nav ul{
@@ -29,20 +27,45 @@ header.header-bar {
   list-style: none;
 }
 .header-nav ul li{
-  padding: 5px 10px;
+  padding: 12px 30px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .header-nav ul li.admin{
   background-color: #fff;
-  border-radius: 6px;
 }
 
 .header-info {
-  width: 500px;
-  padding: 10px;
-  background-color: #ffffff80;
+  width: 520px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 50px;
+  padding: 40px 50px;
+  background: rgba(114, 159, 218, 0.45);
+  font-size: 22px;
+  border-radius: 5px;
+  color: #fff;
 }
+.header-action-buttons{
+  position: absolute;
+  bottom: 10vh;
+}
+
+.header-action-buttons button {
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.header-action-buttons button:first-child {
+  margin-right: 10px;
+}
+
 .check-schedule{
   display: none;
 }

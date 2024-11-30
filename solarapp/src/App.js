@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import AdminPage from "./pages/AdminPage";
 
 //import './App.css';
+import './styling/Main.css';
 
 function App() {
   return (

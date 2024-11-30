@@ -22,8 +22,6 @@ const HomePage = () => {
 
   return (
     <>
-      <h1>Home PAGE - <br />To be editted</h1>
-
       <Header />
       <IconInfoBar />
       <ScheduleFormSection />
