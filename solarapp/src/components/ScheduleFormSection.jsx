@@ -71,7 +71,7 @@ const ScheduleFormSection = () => {
             <p>
               Not ready to schedule?
             </p>
-            <a href="#">Back to Homepage</a>
+            <button type="button"> Back to Homepage</button>
           </div>
         </div>
       </div>
