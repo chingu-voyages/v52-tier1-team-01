@@ -4,7 +4,7 @@
   background-color: #fafafa;
   padding: 120px 0;
 }
-
+ 
 
 .form-message-container{
   margin-top: 220px;
@@ -108,9 +108,11 @@
   display: block; 
 }
 
+/*
 .form-message-container:has(.form-success-info.open) .action-button-form {
   display: none; 
 }
+*/
 
 .form-success-info .title{
   font-size: 40px;
