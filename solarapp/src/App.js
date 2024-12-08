@@ -1,4 +1,7 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import { Navigate } from 'react-router-dom'; // Remove this if not used.
+//const isAdminLoggedIn = false; // Remove or comment this if not used.
+
 import HomePage from "./pages/HomePage";
 import AdminPage from "./pages/AdminPage";
 import Dashboard from "./pages/Dashboard";
@@ -11,9 +14,9 @@ import './styling/Main.css';
 
 function App() {
 
-  const isAdminLoggedIn = () => {
-    return localStorage.getItem('adminLoggedIn') === 'true';
-  };
+ // const isAdminLoggedIn = () => {
+//    return localStorage.getItem('adminLoggedIn') === 'true';
+//  };
 
 
   return (
