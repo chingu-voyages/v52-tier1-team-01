@@ -1,0 +1,181 @@
+.schedule-form-section {
+  position: relative;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 120px 0;
+}
+
+
+.form-message-container{
+  margin-top: 220px;
+  background-color: #fff;
+  padding: min(5vw,120px) min(10vw,148px);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}  
+
+.schedule-form-section .form-head{
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 60px;
+  text-align: center;
+}
+.form-wrapper {
+  margin-bottom: 80px;
+}
+.form-wrapper .title{
+  margin-bottom: 60px;
+  font-size: 35px;
+  font-weight: bold;
+}  
+
+.form-wrapper fieldset{ 
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 80px;
+  padding: 0;
+  border: none;
+}
+
+.form-question{
+  flex: 1 1 calc(50% - 80px);
+}
+
+.form-question:nth-of-type(3),
+.form-question:nth-of-type(6){
+  flex: 100%;
+}
+
+.form-question:nth-of-type(3) input,
+.form-question:nth-of-type(6) input{
+  width: calc(50% - 40px);
+}
+
+.form-question label{
+  display: block;
+  min-width: 120px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.form-question input{
+  width: 100%;
+  padding: 6px 19px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.form-question input:read-only{
+  background-color: #fafafa;
+}
+
+.action-button-form{
+  display: flex;
+  gap: 80px;
+  margin-inline: auto;
+  margin-block: 50px;
+}
+
+.action-button-form button{
+  width: clamp(114px,25vw, 194px);
+  padding:6px 0;
+  color: var(--white);
+  border-radius: 6px;
+  font-size: 24px;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/* FORM SUCCESS INFO */
+.form-success-info {
+  display: none; 
+  margin-bottom: 50px;
+  padding: 100px 105px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.form-success-info.open {
+  /* When the 'open' class is added, it will be shown */
+  display: block; 
+}
+
+.form-message-container:has(.form-success-info.open) .action-button-form {
+  display: none; 
+}
+
+.form-success-info .title{
+  font-size: 40px;
+}
+.form-success-info .title + p{
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.form-success-info .phone-num{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.form-success-info .phone-num::before{
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height:18px;
+  background: url(../../public/assets/icon-call.png)no-repeat center;
+}
+
+.controller-linker {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.controller-linker a{
+  color: var(--primary);
+}
+
+@media screen and (max-width:768px) {
+  .form-message-container {
+    margin-top: 200px;
+    padding: 60px 30px;
+  }
+  .form-wrapper{
+    margin-bottom: 40px;
+  }
+  .schedule-form-section .form-head{
+    font-size: 40px;
+  }
+  .schedule-form-section .title{
+    font-size: clamp(24px, 3vw,40px);
+  }
+  .form-wrapper fieldset{
+    flex-direction: column;
+  }
+  .form-wrapper .form-question input{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .action-button-form{
+    gap: 32px;
+    margin: 0;
+  }
+
+  .action-button-form button{
+    flex: 1;
+  }
+}

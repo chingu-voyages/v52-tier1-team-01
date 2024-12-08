@@ -1,0 +1,71 @@
+section.header {
+  width: 100%;
+  height: 100vh;
+  background: url('../../public/assets/main-bg.png')no-repeat center /cover;
+}
+
+section.header a{
+  text-decoration: none;
+  color: #222;
+}
+
+
+
+header.header-bar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 90px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.header-nav ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.header-nav ul li{
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header-nav ul li.admin{
+  background-color: #fff;
+}
+
+.header-info {
+  width: 520px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 50px;
+  padding: 40px 50px;
+  background: rgba(114, 159, 218, 0.45);
+  font-size: 22px;
+  border-radius: 5px;
+  color: #fff;
+}
+.header-action-buttons{
+  position: absolute;
+  bottom: 10vh;
+}
+
+.header-action-buttons button {
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.header-action-buttons button:first-child {
+  margin-right: 10px;
+}
+
+.check-schedule{
+  display: none;
+}
