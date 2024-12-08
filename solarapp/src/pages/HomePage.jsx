@@ -1,28 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Header from "../components/Header";
 import IconInfoBar from "../components/IconInfoBar";
 import ScheduleFormSection from "../components/ScheduleFormSection";
-import SearchAppointmnetSection from "../components/SearchAppointmnetSection";
+import SearchAppointmentSection from "../components/SearchAppointmentSection";
 import PreFooterImage from "../components/PreFooterImage";
 import Footer from "../components/Footer";
 
+// Import the schedule section initialization and form submit handling
+import { initializeScheduleFormSection } from "../utils/basics/scheduleActions";
+import { handleScheduleFormSubmit } from "../utils/basics/formSubmitActions";
+
 const HomePage = () => {
-    return (
-      <>
-        <h1>Home PAGE - <br />To be editted</h1>
+  useEffect(() => {
+    // Initialize the visibility of ScheduleFormSection
+    initializeScheduleFormSection();
 
-        <Header />
-        <IconInfoBar />
-        <ScheduleFormSection />
-        <SearchAppointmnetSection />
-        <PreFooterImage />
-        <Footer />
+    // Handle the form submission only once
+    handleScheduleFormSubmit();
+  }, []); // Runs only once when HomePage is loaded
 
-        <h3>Made by - <br />V52 Tier 01 - team 1</h3>
-        <b>Soumyajit. Yojeong. Amanda</b>
-      </>
-    );
-  };
-  
-  export default HomePage;
+  return (
+    <>
+      <Header />
+      <IconInfoBar />
+      <ScheduleFormSection />
+      <SearchAppointmentSection />
+      <PreFooterImage />
+      <Footer />
+    </>
+  );
+};
+
+export default HomePage;

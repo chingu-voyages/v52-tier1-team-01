@@ -1,7 +1,9 @@
 import React from "react";
 
+import '../styling/PreFooterImage.css'
+
 const PreFooterImage = () => {
-  return <div>PreFooterImage Component <br /> To be editted<br />...</div>;
+  return <div className="pre-footer-image" aria-hidden></div>;
 };
 
 export default PreFooterImage;
