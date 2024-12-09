@@ -1,0 +1,47 @@
+.admin-page {
+  background-color: #f8f9fc;
+}
+.admin-login-header h1{
+  font-size: 60px;
+  font-weight: bold;
+  padding-block: 180px;
+  text-align: center;
+}
+.admin-login-form fieldset {
+  margin-bottom: 200px;
+  padding: 120px 300px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.login-form-question {
+  margin-bottom: 30px;
+}
+.login-form-question:last-child {
+  margin-bottom: 70px;
+}
+.login-form-question label{
+  display: block;
+  font-weight: 500;
+  font-size: 25px;
+}
+.login-form-question input{
+  width: 100%;
+  padding: 6px 19px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: #fafafa;
+}
+.admin-login-form button{
+  width: 100%;
+  padding:6px 0;
+  background-color: #2B75C5;
+  color: var(--white);
+  font-size: 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.admin-login-form fieldset {
+ 
+}
