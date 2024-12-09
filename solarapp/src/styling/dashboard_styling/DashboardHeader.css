@@ -1,0 +1,13 @@
+#dashboardHeader  {
+  background-color: #F0F2F6;
+  border-bottom: 10px solid;
+}
+#dashboardHeader .header-bar {
+  color: var(--primary);
+}
+#dashboardHeader .header-nav li{
+  background-color: transparent;
+}
+#dashboardHeader .header-bar .header-logo{
+  filter: invert(1);
+}
