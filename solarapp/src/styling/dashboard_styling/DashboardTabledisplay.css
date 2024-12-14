@@ -1,26 +1,39 @@
+.dashboard-table-display {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
 .dashboard-table {
   width: 100%;
   border-collapse: collapse ;
   table-layout: fixed; 
   border: 1px solid var(--primary);
+  border: none;
 }
 .dashboard-table tr{
   border-bottom: 1px solid #D8D8D9;
 }
 .dashboard-table th{
-  padding: 5px;
+  padding: 20px 10px;
   text-align: left;
+  background-color: #d6d6d6;
 }
 .dashboard-table td { 
-  padding: 5px;
+  padding: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.col-title.date { 
-  width: 100px;
+.col-title.index {
+  width: 50px;
 }
 .col-title.time,
 .col-title.status { 
   width: 90px;
+}
+.col-title.zip { 
+  width: 100px;
+}
+.col-title.date { 
+  width: 120px;
 }

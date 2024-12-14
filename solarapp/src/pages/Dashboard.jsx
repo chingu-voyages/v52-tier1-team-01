@@ -13,7 +13,7 @@ const Dashboard = () => {
       <DashboardHeader />
       <div className="dashboard-content">
         <div className="container">
-          <h3>Residents Requests</h3>
+          <h3 className="title">Residents Requests</h3>
           <div className="info-table-wrapper">
             <DashboardInfo />
             <DashboardTabledisplay />
