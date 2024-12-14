@@ -8,7 +8,7 @@
   text-align: center;
 }
 .admin-login-form fieldset {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding: 120px 300px;
   background-color: var(--white);
   border: 1px solid var(--border);
@@ -42,6 +42,6 @@
   border: none;
   cursor: pointer;
 }
-.admin-login-form fieldset {
- 
+.admin-page .controller-linker {
+margin-bottom: 100px;
 }
