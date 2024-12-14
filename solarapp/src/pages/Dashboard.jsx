@@ -10,14 +10,11 @@ import '../styling/dashboard_styling/Dashboard.css'
 const Dashboard = () => {
   return (
     <>
-      <DashboardHeader />
+      {/* <DashboardHeader /> */}
       <div className="dashboard-content">
         <div className="container">
-          <h3 className="title">Residents Requests</h3>
-          <div className="info-table-wrapper">
-            <DashboardInfo />
-            <DashboardTabledisplay />
-          </div>
+          <DashboardInfo />
+          <DashboardTabledisplay />
         </div>
       </div>
       <Footer />
