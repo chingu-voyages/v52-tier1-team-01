@@ -1,6 +1,6 @@
 import React from "react";
 
-import DashboardHeader from "../components/DashboardComponents/DashboardHeader"
+//import DashboardHeader from "../components/DashboardComponents/DashboardHeader"
 import DashboardInfo from "../components/DashboardComponents/DashboardInfo"
 import DashboardTabledisplay from "../components/DashboardComponents/DashboardTabledisplay"
 
