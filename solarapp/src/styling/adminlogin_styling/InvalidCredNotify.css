@@ -1,0 +1,22 @@
+#invalidCredNotify {
+  position: relative;
+  margin-bottom: 70px;
+  padding: 25px 30px;
+  border: 1px solid #F1224F;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+#invalidCredNotify:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  background: url('../../../public/assets/icon-alert.png')no-repeat center/26px;
+}
+#invalidCredNotify p:first-of-type {
+  font-weight: bold;
+}
