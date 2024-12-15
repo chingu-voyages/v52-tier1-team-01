@@ -5,22 +5,21 @@ import DashboardInfo from "../components/DashboardComponents/DashboardInfo"
 import DashboardTabledisplay from "../components/DashboardComponents/DashboardTabledisplay"
 
 import Footer from "../components/Footer";
+import '../styling/dashboard_styling/Dashboard.css'
 
 const Dashboard = () => {
-    return (
-      <>
-      <div>
-        <h1>Admin Dashboard Coming Soon!</h1>
-        <a href="/">Back to Home</a><br />
-        <a href="/admin">Back to Admin Login</a>
+  return (
+    <>
+      {/* <DashboardHeader /> */}
+      <div className="dashboard-content">
+        <div className="container">
+          <DashboardInfo />
+          <DashboardTabledisplay />
+        </div>
       </div>
-      <DashboardHeader />
-      <DashboardInfo />
-      <DashboardTabledisplay />
       <Footer />
-      </>
-    );
-  };
-  
-  export default Dashboard;
-  
+    </>
+  );
+};
+
+export default Dashboard;

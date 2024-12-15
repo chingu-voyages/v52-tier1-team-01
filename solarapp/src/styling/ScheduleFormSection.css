@@ -146,8 +146,18 @@
   font-weight: 600;
   font-size: 20px;
 }
-.controller-linker a{
+.controller-linker a,
+.controller-linker button{
   color: var(--primary);
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.controller-linker a:hover,
+.controller-linker button:hover{
+  color: #2B75C5;
 }
 
 @media screen and (max-width:768px) {
