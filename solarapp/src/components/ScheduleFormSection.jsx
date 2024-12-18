@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-
 import '../styling/ScheduleFormSection.css';
-
 import { backToHomePage } from "../utils/basics/backToHomePage";
 
 const ScheduleFormSection = () => {
@@ -11,7 +9,7 @@ const ScheduleFormSection = () => {
   }, []);
 
   return (
-    <section className="schedule-form-section">
+    <div className="schedule-form-section">
       <div className="container">
         <div className="form-message-container">
           <form method="post" className="form-wrapper" action="#">
@@ -54,7 +52,7 @@ const ScheduleFormSection = () => {
                 </div>
                 <div className="action-button-form">
                   <button type="submit" className="button-submit">Schedule</button>
-                  <button type="button" className="button-reset">Reset</button>
+                  <button type="reset" className="button-reset">Reset</button>
                 </div>
               </fieldset>
             </div>
@@ -71,11 +69,11 @@ const ScheduleFormSection = () => {
             <p>
               Not ready to schedule?
             </p>
-            <button type="button"> Back to Homepage</button>
+            <button type="button" onClick={backToHomePage}>Back to Homepage</button>
           </div>
         </div>
       </div>
-    </section >
+    </div>
   );
 };
 
