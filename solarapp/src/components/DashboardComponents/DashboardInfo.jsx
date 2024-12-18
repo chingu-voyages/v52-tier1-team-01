@@ -2,9 +2,10 @@
 
 import React, {useEffect} from "react";
 import { useNavigate } from "react-router-dom";
+import { exportToPDF } from "../../utils/adminfucntionality/pdfexporter"; // Import the PDF utility
 import '../../styling/dashboard_styling/DashboardInfo.css';
 
-const DashboardInfo = () => {
+const DashboardInfo = ({ appointments }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -13,6 +14,12 @@ const DashboardInfo = () => {
     console.log(localStorage.getItem('adminLoggedIn'));
     navigate('/'); // Redirect to the homepage
   };
+
+  const handleExportPDF = () => {
+    exportToPDF(appointments); // Pass the appointments data to PDF generator
+  };
+
+
   // Use useEffect to introduce a delay before checking the localStorage
   useEffect(() => {
     setTimeout(() => {
@@ -30,7 +37,7 @@ const DashboardInfo = () => {
         <span className="greet-message">Hi Admin!</span>
         <div className="download-wrap">
           <span>Download</span>
-          <button type="button">PDF</button>
+          <button type="button" className="pdf-export" onClick={handleExportPDF}>PDF</button>
           <button type="button">Excel</button>
         </div>
       </div>
