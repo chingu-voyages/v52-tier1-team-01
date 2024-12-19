@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route , Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 //import { useEffect } from "react";
 
 import HomePage from "./pages/HomePage";
 import AdminPage from "./pages/AdminPage";
 import Dashboard from "./pages/Dashboard";
+import AboutUs from "./pages/AboutUs";
 
 import './styling/Main.css';
 
@@ -17,9 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/admin" element={isAdminLoggedIn() ? <Navigate to="/dashboard" /> : <AdminPage />} />
-        <Route 
-          path="/dashboard" 
-          element={isAdminLoggedIn() ? <Dashboard /> : <Navigate to="/" />} 
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route
+          path="/dashboard"
+          element={isAdminLoggedIn() ? <Dashboard /> : <Navigate to="/" />}
         />
       </Routes>
     </Router>

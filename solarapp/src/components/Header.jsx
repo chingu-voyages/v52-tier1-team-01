@@ -8,13 +8,13 @@ const Header = () => {
       <div className="container">
         <header className="header-bar">
           <h1 className="header-logo">
-            <img src="/assets/solar-app-logo.svg" alt="SAY logo" />
+            <a href="/"><img src="/assets/solar-app-logo.svg" alt="SAY logo" /></a>
           </h1>
           <nav className="header-nav">
             <h2 className="visually-hidden">navigation</h2>
             <ul>
-              <li>Schedule</li>
-              <li>About Us</li>
+              <li><button type="button">Schedule</button></li>
+              <li><a href="/aboutus">About Us</a></li>
               <li className="admin">
                 <a href="/admin">Admin Login</a>
               </li>
