@@ -28,7 +28,7 @@ const ScheduleFormSection = () => {
                 </div>
                 <div className="form-question">
                   <label htmlFor="input-phone-num">Phone Number</label>
-                  <input type="number" id="input-phone-num" maxlength="10" pattern="[1-9][0-9]{9}" required />
+                  <input type="number" id="input-phone-num" maxLength="10" pattern="[1-9][0-9]{9}" required />
                 </div>
                 <div className="form-question">
                   <label htmlFor="input-address1">Address Line 1</label>

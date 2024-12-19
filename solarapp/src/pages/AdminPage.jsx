@@ -1,6 +1,7 @@
 import React from "react";
-import AdminLoginForm from "../components/adminPageComponents/AdminLoginForm"
-import Footer from '../components/Footer'
+//import { useNavigate } from "react-router-dom";
+import AdminLoginForm from "../components/adminPageComponents/AdminLoginForm";
+import Footer from '../components/Footer';
 
 const AdminPage = () => {
   return (
@@ -10,7 +11,6 @@ const AdminPage = () => {
         <div className="controller-linker">
           <p>Back to <a href="/">Homepage</a></p>
         </div>
-        <a href="/dashboard">To Admin Dashboard  (to be eddited)</a>
       </div>
       <Footer />
     </div>

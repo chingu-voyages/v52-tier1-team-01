@@ -1,44 +1,31 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-//import { Navigate } from 'react-router-dom'; // Remove this if not used.
-//const isAdminLoggedIn = false; // Remove or comment this if not used.
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+//import { useEffect } from "react";
 
 import HomePage from "./pages/HomePage";
 import AdminPage from "./pages/AdminPage";
 import Dashboard from "./pages/Dashboard";
+import AboutUs from "./pages/AboutUs";
 
-
-//import './App.css';
 import './styling/Main.css';
 
-
-
 function App() {
-
- // const isAdminLoggedIn = () => {
-//    return localStorage.getItem('adminLoggedIn') === 'true';
-//  };
-
+  // Function to check if user is logged in
+  const isAdminLoggedIn = () => localStorage.getItem('adminLoggedIn') === 'true';
 
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/admin" element={<AdminPage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        
-        
+        <Route path="/admin" element={isAdminLoggedIn() ? <Navigate to="/dashboard" /> : <AdminPage />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route
+          path="/dashboard"
+          element={isAdminLoggedIn() ? <Dashboard /> : <Navigate to="/" />}
+        />
       </Routes>
     </Router>
   );
 }
 
 export default App;
-
-
-
-//<Route 
-//          path="/dashboard" 
-//          element={
-//            isAdminLoggedIn() ? <Dashboard /> : <Navigate to="/admin" />
-//          }
-//        />
