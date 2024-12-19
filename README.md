@@ -83,9 +83,9 @@ Welcome to **SolarApp**, a project aimed at streamlining solar panel installatio
 
 ## Team
 
-- **Amanda:** [GitHub](https://github.com/Amanda774) / [LinkedIn](https://linkedin.com/in/liaccountname)
-- **Soumyajit Sinha:** [GitHub](https://github.com/soumyajit-siliguri) / [LinkedIn](https://www.linkedin.com/in/soumyajit-sinha-7652b7189/)
-- **Yujeong:** [GitHub](https://github.com/icimz8)
+- **Amanda: UI/UX** [GitHub](https://github.com/Amanda774) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- **Soumyajit Sinha: Dev** [GitHub](https://github.com/soumyajit-siliguri) / [LinkedIn](https://www.linkedin.com/in/soumyajit-sinha-7652b7189/)
+- **Yujeong: Dev** [GitHub](https://github.com/icimz8)
 
 ---
 
