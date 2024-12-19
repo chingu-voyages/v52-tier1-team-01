@@ -3,7 +3,8 @@ import supabase from '../database-integration/database-connection'; // Adjusted 
 
 
 let isSubmitting = false; // Flag to track submission state
-const table_name = "appointment_details";
+//const table_name = "appointment_details";
+const TABLE_NAME = process.env.REACT_APP_TABLE_NAME;
 // Function to handle the schedule form submission
 export function handleScheduleFormSubmit() {
   // Get the form element by class
@@ -49,7 +50,7 @@ export function handleScheduleFormSubmit() {
 
       // Insert data into the database
       const { data, error } = await supabase
-        .from(table_name)
+        .from(TABLE_NAME)
         .insert({
           name: appointmentData.name,
           email: appointmentData.email,
@@ -68,7 +69,7 @@ export function handleScheduleFormSubmit() {
 
         // Fetch and log all appointments from the database
         const { data: allAppointments, error: fetchError } = await supabase
-          .from(table_name)
+          .from(TABLE_NAME)
           .select('*');
 
         if (fetchError) {
