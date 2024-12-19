@@ -2,8 +2,9 @@ import React from "react";
 
 import '../../styling/dashboard_styling/DashboardTabledisplay.css';
 
+const DashboardTabledisplay = ({ appointments }) => {
+  //console.log('Appointments:', appointments);
 
-const DashboardTabledisplay = () => {
   return (
     <div id="dashboardTabledisplay" className="dashboard-table-display">
       <table className="dashboard-table">
@@ -20,16 +21,20 @@ const DashboardTabledisplay = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className="col-content index">1</td>
-            <td className="col-content date">14/12/2024</td>
-            <td className="col-content time">10:00</td>
-            <td className="col-content name">Lisa Martinez</td>
-            <td className="col-content email">lisa.martinex@gmail.com</td>
-            <td className="col-content address">1234 Evergreen Avenue</td>
-            <td className="col-content zip">90012</td>
-            <td className="col-content status">Visited</td>
-          </tr>
+          {appointments.map((appointment, index) => (
+            <tr key={`appnt_${index + 1}`}>
+              <td className="col-content index">{index + 1}</td>
+              <td className="col-content date">{appointment.date}</td>
+              <td className="col-content time">{appointment.time.slice(0, 5)}</td> {/* Only HH:MM */}
+              <td className="col-content name">{appointment.name}</td>
+              <td className="col-content email">{appointment.email}</td>
+              <td className="col-content address">
+                {appointment.address_2 ? `${appointment.address_1}, ${appointment.address_2}` : appointment.address_1}
+              </td>
+              <td className="col-content zip">{appointment.zipcode}</td>
+              <td className="col-content status">{appointment.status}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
