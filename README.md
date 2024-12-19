@@ -35,5 +35,5 @@ your repo access and to practice PR'ing with your team *before* you start
 coding!
 
 - Amanda : [GitHub](https://github.com/Amanda774) / [LinkedIn](https://linkedin.com/in/liaccountname)
-- Soumyajit Sinha : [GitHub](https://github.com/soumyajit-siliguri) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- Soumyajit Sinha : [GitHub](https://github.com/soumyajit-siliguri) / [LinkedIn](https://www.linkedin.com/in/soumyajit-sinha-7652b7189/)
 - Yujeong : [GitHub](https://github.com/icimz8)
