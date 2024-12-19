@@ -1,24 +1,95 @@
-# voyage-tasks
+# SolarApp
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+Welcome to **SolarApp**, a project aimed at streamlining solar panel installation evaluations for the residents of Los Angeles. This platform is part of a local initiative to promote sustainable energy solutions and combat global warming.
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+---
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+## Table of Contents
 
-> Own it & Make it your Own!
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Usage](#usage)
+5. [Team](#team)
+6. [Acknowledgments](#acknowledgments)
 
-## Team Documents
+---
 
-You may find these helpful as you work together to organize your project.
+## Overview
 
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
+**SolarApp** is a single-page application (SPA) designed to facilitate the scheduling of solar panel evaluation appointments for residents and assist city employees in managing and optimizing these visits.
+
+### Key Roles:
+
+- **Resident:**
+  - Submit a request for a solar panel evaluation.
+  - Provide details such as contact information, address, and preferred timeslot.
+  - Receive confirmation and appointment updates.
+
+- **City Hall Employee:**
+  - View and manage resident requests.
+  - Export schedules in downloadable formats (PDF).
+
+---
+
+## Features
+
+### Resident Interface:
+
+- Submit evaluation requests via an intuitive form.
+- Persistent storage of requests using Supabase DB.
+- Cancel appointments through a dedicated contact number.
+
+### Admin Interface:
+
+- Login system for city employees username passowrd validation via a .env file).
+- View and manage all appointment requests.
+- Generate and export visit schedules.
+
+
+---
+
+## Getting Started
+
+### Prerequisites:
+
+- Web browser (Chrome, Firefox, Edge, or Safari).
+- Node.js and npm (for development).
+- Clone the repository: `git clone https://github.com/chingu-voyages/v52-tier1-team-01`
+
+### Installation:
+
+1. Navigate to the project directory: `cd SolarApp`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+
+---
+
+## Usage
+
+### Resident:
+
+1. Navigate to the home page.
+2. Fill out the form with your details and preferred timeslot.
+3. Submit your request and await confirmation.
+
+### Admin:
+
+1. Navigate to `/admin` and log in using an approved email.
+2. View all resident requests.
+3. Generate schedule and export it if needed.
+
+---
+
+## Team
+
+- **Amanda:** [GitHub](https://github.com/Amanda774) / [LinkedIn](https://linkedin.com/in/liaccountname)
+- **Soumyajit Sinha:** [GitHub](https://github.com/soumyajit-siliguri) / [LinkedIn](https://www.linkedin.com/in/soumyajit-sinha-7652b7189/)
+- **Yujeong:** [GitHub](https://github.com/icimz8)
+
+---
+
+Make your solar journey easier with **SolarApp**!
 
 Meeting Agenda templates (located in the `/docs` directory in this repo):
 
@@ -27,13 +98,10 @@ Meeting Agenda templates (located in the `/docs` directory in this repo):
 - Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
 - Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
 
-## Our Team
+---
 
-Everyone on your team should add their name along with a link to their GitHub
-& optionally their LinkedIn profiles below. Do this in Sprint #1 to validate
-your repo access and to practice PR'ing with your team *before* you start
-coding!
+## Acknowledgments
 
-- Amanda : [GitHub](https://github.com/Amanda774) / [LinkedIn](https://linkedin.com/in/liaccountname)
-- Soumyajit Sinha : [GitHub](https://github.com/soumyajit-siliguri) / [LinkedIn](https://www.linkedin.com/in/soumyajit-sinha-7652b7189/)
-- Yujeong : [GitHub](https://github.com/icimz8)
+We extend our gratitude to the Chingu community for their continuous support and guidance. Special thanks to Google, Ethereal, and IndexedDB for their invaluable tools and resources.
+
+---
