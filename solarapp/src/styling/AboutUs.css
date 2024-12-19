@@ -1,0 +1,89 @@
+
+.aboutUs .header {
+  padding-bottom: 20px;
+  border-bottom: 30px solid #222;
+}
+
+
+.aboutUs header.header-bar {
+  color: #222;
+}
+ 
+.aboutUs .header-nav ul li a,
+.aboutUs .header-nav ul li button {
+  color: #222;
+  text-decoration: none;
+}
+
+.aboutUs  .header-nav ul li.admin a{
+  background-color: #222;
+  color: #fff ;
+}
+.aboutUs  .header-logo{
+  filter: invert(0.9);
+}
+
+.aboutUs .title {
+  font-size: 60px;
+  margin-bottom: 130px;
+  text-align: center;
+}
+.aboutUs .title + p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.aboutUs .content {
+  padding: 160px 0;
+}
+.profile-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 120px;
+}
+.profile{
+  flex: 1;
+}
+.profile-head{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.profile .role {
+  margin-left: 5px;
+  padding: 2px 10px;
+  background-color: #e3e8ef;
+  border-radius: 99px;
+  font-size: 14px;
+}
+.profile-head + p{
+  margin-bottom: 10px;
+}
+.profile .strength {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style-type: none;
+  padding: 0;
+}
+.profile .strength li{
+  margin: 0;
+  border:1px solid var(--primary);
+  border-radius: 99px;
+  padding: 1px 4px;
+  
+  font-size: 14px;
+}
+.netlify-link {
+  padding-bottom: 100px;
+  text-align: center;  
+}
+.netlify-link a{
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
